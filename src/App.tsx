@@ -4,10 +4,7 @@ import { Container } from './components/Container';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
-import { DefaultInput } from './components/DefaultInput';
-import { Cycles } from './components/Cycles';
-import { DefaultButton } from './components/DefaultButton';
-import { PlayCircleIcon } from 'lucide-react';
+import { MainForm } from './components/MainForm';
 import { Footer } from './components/Footer';
 
 function App() {
@@ -26,15 +23,7 @@ function App() {
       </Container>
 
       <Container>
-        <DefaultInput
-          id='selecione'
-          type='text'
-          labelText='teste'
-          placeholder='digite algo'
-        />
-        <Cycles />
-
-        <DefaultButton icon={<PlayCircleIcon />} color='green' />
+        <MainForm />
       </Container>
 
       <Container>
