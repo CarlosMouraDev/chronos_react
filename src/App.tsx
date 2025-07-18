@@ -30,8 +30,7 @@ function App() {
           id='selecione'
           type='text'
           labelText='teste'
-          disabled
-          defaultValue='valor preenchido'
+          placeholder='digite algo'
         />
         <Cycles />
 

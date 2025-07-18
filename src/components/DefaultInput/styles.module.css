@@ -5,6 +5,7 @@
   padding: 0.8rem;
   color: var(--text-default);
   outline: none;
+  font-style: italic;
 
   border: 0.2rem solid transparent;
   border-bottom: 0.2rem solid var(--primary);
