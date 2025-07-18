@@ -3,6 +3,7 @@ import { Heading } from './components/Heading';
 import { Logo } from './components/Logo';
 import './styles/theme.css';
 import './styles/global.css';
+import { Menu } from './components/Menu';
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
         <Logo />
       </Container>
       <Container>
-        <Heading>TESTE1</Heading>
+        <Heading>
+          <Menu />
+        </Heading>
       </Container>
     </>
   );
