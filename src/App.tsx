@@ -5,6 +5,7 @@ import './styles/global.css';
 import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
 import { DefaultInput } from './components/DefaultInput';
+import { Cycles } from './components/Cycles';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           disabled
           defaultValue='valor preenchido'
         />
+        <Cycles />
       </Container>
     </>
   );
