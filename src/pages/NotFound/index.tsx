@@ -1,9 +1,9 @@
 import { Container } from '../../components/Container';
 import { GenericHtml } from '../../components/GenericHtml';
 import { Heading } from '../../components/Heading';
-import MainTemplate from '../../templates/MainTemplate';
+import { MainTemplate } from '../../templates/MainTemplate';
 
-function Home() {
+function NotFound() {
   return (
     <MainTemplate>
       <Container>
@@ -36,4 +36,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default NotFound;
