@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import { AboutPomodoro } from './pages/AboutPomodoro';
 
 function App() {
-  return <AboutPomodoro />;
+  return <Home />;
 }
 
 export default App;
