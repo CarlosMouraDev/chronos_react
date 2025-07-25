@@ -9,11 +9,13 @@ import { useTaskContext } from '../../hooks/useTaskContext';
 import { getNextCycle } from '../../utils/getNextCycle';
 import { getNextCycleType } from '../../utils/getNextCycleType';
 import { TaskActionTypes } from '../../contexts/TaskContext/taskActions';
+import { Tips } from '../Tips';
 
 export function MainForm() {
   const { state, dispatch } = useTaskContext();
   const taskNameInput = useRef<HTMLInputElement>(null);
 
+  // Cycles
   const nextCycle = getNextCycle(state.currentCycle);
   const nextCycleType = getNextCycleType(nextCycle);
 
@@ -57,6 +59,11 @@ export function MainForm() {
           disabled={!!state.activeTask}
         />
       </div>
+
+      <div className={styles.formRow}>
+        <Tips />
+      </div>
+
       {state.currentCycle > 0 && (
         <div className={styles.formRow}>
           <Cycles />
