@@ -1,8 +1,8 @@
-import { Home } from 'lucide-react';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router';
 import { AboutPomodoro } from '../../pages/AboutPomodoro';
 import NotFound from '../../pages/NotFound';
 import { useEffect } from 'react';
+import Home from '../../pages/Home';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
