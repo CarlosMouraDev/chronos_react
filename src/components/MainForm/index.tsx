@@ -10,6 +10,7 @@ import { getNextCycle } from '../../utils/getNextCycle';
 import { getNextCycleType } from '../../utils/getNextCycleType';
 import { TaskActionTypes } from '../../contexts/TaskContext/taskActions';
 import { Tips } from '../Tips';
+import { toastifyAdapter } from '../../adapters/toastifyAdapter';
 
 export function MainForm() {
   const { state, dispatch } = useTaskContext();
@@ -27,7 +28,9 @@ export function MainForm() {
     const taskName = taskNameInput.current.value.trim();
 
     if (!taskName) {
-      alert('divite o nome da tarefa');
+      toastifyAdapter.dismiss();
+      toastifyAdapter.warn('Digite o nome da tarefa');
+      return;
     }
 
     const newTask: TaskModel = {
@@ -41,9 +44,13 @@ export function MainForm() {
     };
 
     dispatch({ type: TaskActionTypes.START_TASK, payload: newTask });
+    toastifyAdapter.dismiss();
+    toastifyAdapter.success('Tarefa iniciada');
   }
 
   function handleInterruptTask() {
+    toastifyAdapter.dismiss();
+    toastifyAdapter.info('Tarefa interrompida.');
     dispatch({ type: TaskActionTypes.INTERRUPT_TASK });
   }
 
