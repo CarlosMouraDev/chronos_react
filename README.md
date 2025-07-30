@@ -4,6 +4,8 @@
 Pomodoro, desenvolvida com React. O objetivo é ajudar usuários a gerenciar
 melhor seu tempo de trabalho e descanso, promovendo foco e eficiência.
 
+Link para deploy do projeto: https://chronos-pomodoro-beryl.vercel.app/
+
 ---
 
 ## 🚀 Funcionalidades
