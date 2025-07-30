@@ -54,6 +54,8 @@ function History() {
   }, [state.tasks]);
 
   useEffect(() => {
+    document.title = 'Histórico - Chronos Pomodoro';
+
     return () => {
       toastifyAdapter.dismiss();
     };

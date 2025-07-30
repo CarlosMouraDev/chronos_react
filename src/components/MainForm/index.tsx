@@ -61,7 +61,7 @@ export function MainForm() {
         <DefaultInput
           id='time'
           type='text'
-          labelText='teste'
+          labelText='Digite o nome da tarefa'
           placeholder='digite algo'
           ref={taskNameInput}
           disabled={!!state.activeTask}
