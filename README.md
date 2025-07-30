@@ -44,7 +44,7 @@ Link para deploy do projeto: https://chronos-pomodoro-beryl.vercel.app/
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/chronos-pomodoro.git
+git clone git@github.com:CarlosMouraDev/chronos_react.git
 
 # Entre no diretório do projeto
 cd chronos-pomodoro
